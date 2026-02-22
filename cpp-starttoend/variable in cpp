@@ -1,0 +1,56 @@
+#include <iostream>
+
+int main(){
+
+    //for integer data bases (whole number -1,0,1,2)
+    int x = 3;
+    int year = 2005;
+    int raza = 9;
+    int Cl = 35.5; // in that case , only 35 will be shown
+
+    /*std::cout << raza;
+    return 0;*/   //this displays 9
+
+
+    //for double data bases (number including decimals)
+    double pi = 3.14;
+    double Li = 6.9;
+    double aqi = 57.3;
+
+    /*std::cout << aqi;
+    return 0;*/
+
+
+    //for charecter data type (single symbol = 'A','@','#','1',) ' ' is nessary.
+    char apple = 'A';
+    char carbon = 'C';
+    char grade = 'B';
+
+    /*std::cout << apple;
+    return 0;*/
+
+
+    //boolean data type (true or false)
+    bool student = false;
+    bool twotwo22 = true;
+    bool python = false;
+
+    /*std::cout << student;
+    return 0;*/
+
+
+    //string data type (object that reprasent the sequance of text)
+    std::string name = "Zoro";
+    std::string planet = "Mars";
+    std::string bug = "Beetal";
+                              //we cant use string as like other datyp we use std::string
+    /*std::cout << bug;
+    return 0;*/
+
+    std::cout << "hello " << name << '\n';
+    std::cout << "todays air quality index is " << aqi << '\n';
+    return 0;
+
+}
+
+
