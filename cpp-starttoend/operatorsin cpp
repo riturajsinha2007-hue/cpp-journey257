@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+int a = 3;
+int b = 10;
+
+cout << "these are the types of operators in c++ \n";
+
+
+//ARITHMATIC Operetors...
+cout << "the value of a + b = " << a + b <<endl;
+cout << "the value of a - b = " << a - b <<endl;
+cout << "the value of a / b = " << a / b <<endl;
+cout << "the value of a * b = " << a * b <<endl;
+cout << "the value of a % b = " << a % b <<endl; 
+cout << "the value od ++a =   " << ++a <<endl;
+cout << "the value od --b =   " << --b <<endl;
+cout <<endl;
+
+//ASSINGHMENT Operetors..
+
+
+//LOGICAL Operetors..
+cout << "following are the logical operetors in c++"<<endl;
+
+cout << "the value ( !(a==b)&&(a<b) ) logical operetors is = " << (!(a==b) && (a<b)) <<endl; // NAND gate
+cout << "the value ( (a==b)&&(a<b) ) logical operetors is = " << ((a==b) && (a<b)) <<endl; // AND gate
+
+cout << "the value of ((a==b) || (a<b)) logical operetor is = " << ((a==b) || (a<b)) <<endl; // OR gate
+cout << "the value of (!(a==b))logical operetor is = " << (!(a==b)) <<endl; // NOR gate
+cout << "the value of !((a==b) || (a<b)) logical operetor is = " << !((a==b) || (a<b)) <<endl; //NOR game
+
+
+return 0;
+
+
+// threre are also many types types of operetors such as 
+/*assinment operator, comparision operetor, Bitwise opereto
+,Conditional(ternary)operator, sizeof,pointer,scope resolution*/
+
+}
