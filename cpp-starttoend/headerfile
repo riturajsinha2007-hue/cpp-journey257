@@ -1,1 +1,27 @@
-heeaderfile
+#include <iostream> // <iostream> is a header file.
+#include <cmath>
+#include <cstdlib>
+#include <cstring>
+#include <vector>
+//#include <---x---> 
+
+int main(){
+    int raza = 30;
+    int A = 0;
+    std::cout << "hello mother###r !!" << "\n";
+    std::cout << sin(A);
+    return 0;
+}
+
+"There are two typs of header files"-
+
+ 1. pre-existing header files
+ 2. user-derived header files
+
+ 1. /* pre-existing = these are the head files that are already available in C++ 
+                      compiler we just need to import them standard standard header file are part
+                      of C++ library and provide common use functionalities */
+    /*dervied files = 
+                      these files are defined by user and can be imported using #include
+                      These files are used to store own functions and declarations */
+ 
