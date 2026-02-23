@@ -1,0 +1,68 @@
+/*
+    Input Demonstration in C++
+    --------------------------
+       Diffrent type of input in cpp
+      - Single value
+      - Multiple values
+      - Strings
+      - Full line input (getline)
+      - Mixing input types
+
+    This file is beginner-friendly and ready for GitHub upload.
+*/
+
+#include <iostream>
+#include <string>   // Needed for string and getline
+using namespace std;
+
+int main() {
+
+    cout << "=== Input Demonstration ===" << endl << endl;
+
+
+
+    // 🔹 1. Single integer input
+    int age;
+    cout << "Enter your age: ";
+    cin >> age;
+    cout << "[You entered age] " << age << endl << endl;
+
+
+
+    // 🔹 2. Multiple inputs in one line
+    int x, y;
+    cout << "Enter two numbers (separated by space): ";
+    cin >> x >> y;
+    cout << "[You entered numbers] x = " << x << ", y = " << y << endl << endl;
+
+
+
+    // 🔹 3. String input (single word)
+    string name;
+    cout << "Enter your first name: ";
+    cin >> name;   // Stops at space
+    cout << "[You entered name] " << name << endl << endl;
+
+
+
+    // 🔹 4. Full line input using getline
+    cin.ignore();  // Clear leftover newline from previous input
+    string fullName;
+    cout << "Enter your full name: ";
+    getline(cin, fullName);   // Reads entire line including spaces
+    cout << "[You entered full name] " << fullName << endl << endl;
+
+
+
+    // 🔹 5. Mixing input types
+    double marks;
+    cout << "Enter your marks (decimal allowed): ";
+    cin >> marks;
+    cout << "[You entered marks] " << marks << endl << endl;
+
+
+
+    cout << "=== End of Demonstration ===" << endl;
+
+    return 0;
+}
