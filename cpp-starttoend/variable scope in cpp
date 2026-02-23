@@ -1,7 +1,8 @@
 /*
     Variable Scope Demonstration in C++
+
     Purpose: To show how variables behave in different scopes
-             (global, local, block, function, static).
+    (global, local, block, function, static)
     This file is beginner-friendly and ready for GitHub upload.
 */
 
