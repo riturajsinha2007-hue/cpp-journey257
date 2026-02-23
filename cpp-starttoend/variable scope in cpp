@@ -1,0 +1,54 @@
+/*
+    Variable Scope Demonstration in C++
+    Purpose: To show how variables behave in different scopes
+             (global, local, block, function, static).
+    This file is beginner-friendly and ready for GitHub upload.
+*/
+
+#include <iostream>
+using namespace std;
+
+// 🌍 Global variable (accessible everywhere in this file)
+int globalVar = 10;
+
+// 📌 Function to demonstrate function scope
+void showNumber() {
+    int num = 50; // Function scope: exists only while this function runs
+    cout << "[Function Scope] num = " << num << endl;
+}
+
+// 📌 Function to demonstrate static variable scope
+void counter() {
+    static int count = 0; // Static scope: retains value across calls
+    count++;
+    cout << "[Static Scope] count = " << count << endl;
+}
+
+int main() {
+    cout << "=== Variable Scope Demonstration ===" << endl;
+
+    // 🔹 Local scope
+    int localVar = 20;
+    cout << "[Global Scope] globalVar = " << globalVar << endl;
+    cout << "[Local Scope] localVar = " << localVar << endl;
+
+    // 🔹 Block scope
+    {
+        int y = 10; // Exists only inside this block
+        cout << "[Block Scope] y = " << y << endl;
+    }
+    // y is not accessible here
+    cout << "[Block Scope] y is out of scope now!" << endl;
+
+    // 🔹 Function scope
+    showNumber();
+    // num is not accessible here
+
+    // 🔹 Static scope
+    counter();
+    counter();
+    counter();
+
+    cout << "=== End of Demonstration ===" << endl;
+    return 0;
+}
